@@ -1,6 +1,6 @@
 # 개발 환경
 
-구름이를 빌드해 Pleos Connect 에뮬레이터에서 돌리는 방법입니다. [README](../README.md)의 '실행하기'를 한 단계 더 풀었습니다. 명령은 Windows PowerShell 기준입니다. macOS와 Linux에서도 Gradle과 adb 명령은 같고, `.ps1` 스크립트만 Windows용입니다.
+구름이를 빌드해 Pleos Connect 에뮬레이터에서 돌리는 방법입니다. [README](../README.md)의 '실행 방법'을 한 단계 더 풀었습니다. 명령은 Windows PowerShell 기준입니다. macOS와 Linux에서도 Gradle과 adb 명령은 같고, `.ps1` 스크립트만 Windows용입니다.
 
 ## 필요한 것
 
