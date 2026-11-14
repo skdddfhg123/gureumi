@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 다음 장소가 오른쪽에서 들어옵니다. -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="280"
+    android:fromXDelta="100%"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:toXDelta="0%" />

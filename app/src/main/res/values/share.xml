@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 엽서를 여는 정적 페이지 주소. 비어 있으면 가족에게 보내기 입구를 숨깁니다. docs/design/share-spec.md 5장을 봅니다. -->
+    <string name="share_base_url" translatable="false"></string>
+</resources>

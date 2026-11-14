@@ -1,0 +1,26 @@
+{
+  "packageName": "com.example.pleosapp",
+  "appDescription": "A small beaver spirit in the car that grows with the driver and reflects the vehicle's health.",
+  "invokeWord": "구름이",
+  "version": "0.1.0",
+  "actionCalls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "GET_PET_STATUS",
+        "description": "Tell the user how the driving companion pet is feeling and how today's drive is going.",
+        "parameters": { "type": "object", "properties": {}, "required": [] },
+        "component": "service"
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "GET_VEHICLE_HEALTH",
+        "description": "Report vehicle health issues such as tire pressure or warning lights in plain words.",
+        "parameters": { "type": "object", "properties": {}, "required": [] },
+        "component": "service"
+      }
+    }
+  ]
+}

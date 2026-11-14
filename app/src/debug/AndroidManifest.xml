@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 기술 검증 전용. 릴리스 APK에는 이 권한과 화면이 들어가지 않습니다. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 와이퍼로 비를 알아냅니다. 제품 권한에 넣을지는 결정 타임라인의 열린 결정입니다. -->
+    <uses-permission android:name="pleos.car.permission.CAR_WINDOWS" />
+    <uses-permission android:name="pleos.car.permission.STT_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH" />
+    <uses-permission android:name="pleos.car.permission.NAVI_CUSTOM_ROUTE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <profileable android:shell="true" tools:targetApi="q" />
+
+        <provider
+            android:name=".verify.VerifyProvider"
+            android:authorities="${applicationId}.verify"
+            android:exported="false" />
+
+        <receiver
+            android:name=".verify.ScenarioReceiver"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="검증 콘솔"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.recall.TimeConsoleActivity"
+            android:exported="true"
+            android:label="시간 입력"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <activity
+            android:name=".ui.spirit.SpiritPreviewActivity"
+            android:exported="true"
+            android:label="구름이 미리보기"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.arrival.ArrivalCardActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+    </application>
+
+</manifest>

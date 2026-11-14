@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 지금 장소가 왼쪽으로 밀려납니다. -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="280"
+    android:fromXDelta="0%"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:toXDelta="-100%" />

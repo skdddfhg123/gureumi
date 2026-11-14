@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 11/6: 1차 영상과 발표에 엽서 단추가 나오지 않게 비웠습니다. 1차 동안 그대로 둡니다.
+         2차 엽서 작업 때 개발용 로컬 주소 http://localhost:8123/ 로 되돌리고 share/ 폴더를 띄워 확인합니다. -->
+    <string name="share_base_url" translatable="false"></string>
+</resources>
