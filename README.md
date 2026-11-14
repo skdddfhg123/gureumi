@@ -60,7 +60,7 @@ adb forward tcp:8088 tcp:8088
 - **제출 APK:** [apk/gureumi-dev_gureumi_release.apk](apk/gureumi-dev_gureumi_release.apk)
 - 빌드: 서명한 `release`
 - 앱 ID: `io.github.skdddfhg123.gureumi`
-- 포함 ABI: `arm64-v8a`, `x86_64`
+- 네이티브 라이브러리 ABI: `arm64-v8a`, `armeabi-v7a`, `x86_64`
 
 ## 기획 의도와 주요 기능
 
